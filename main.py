@@ -30,7 +30,7 @@ for path in subfolders:
         result["440"].append(wv440 - wv800)
 
     out_df = pd.DataFrame(result, columns=result.keys())
-    out_df.to_csv("./output/" + path)
+    out_df.to_csv("./output/" + path + ".csv")
 
 
     x = [i for i in range(len(result["320"]))]
