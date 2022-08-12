@@ -8,7 +8,7 @@ subfolders = [ f.path for f in os.scandir(".") if f.is_dir() ]
 
 for path in subfolders:
     path = path.split("./")[1]
-    if not path.startswith("apo@pH9.5-CHES-2"):
+    if not path.startswith("Control"):
         continue
 
     filenames = os.listdir(path)
